@@ -1,2 +1,9 @@
+[web_servers]
 ubuntuansiblelab@192.168.0.16
+centosansiblelab@192.168.0.13
+
+[db_servers]
 ubuntuansiblelab@192.168.0.17
+
+[file_servers]
+ubuntuansiblelab@192.168.0.12
