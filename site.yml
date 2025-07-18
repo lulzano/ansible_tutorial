@@ -42,3 +42,8 @@
    become: true
    roles:
      - file_servers
+
+ - hosts: ubuntu_servers
+   become: true
+   roles:
+     - ubuntu_servers

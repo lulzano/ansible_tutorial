@@ -1,0 +1,13 @@
+- name: Asegurar que el servicio SSHD este instalado y funcionando en los hosts ubuntu_servers
+  apt: 
+    name: openssh-server
+    state: present
+    update_cache: yes
+  when: ansible_distribution == "Ubuntu"
+
+- name: start and enable openssh-server
+  tags: sshd
+  service:
+    name: "{{ sshd_service }}"
+    state: started
+    enabled: yes
